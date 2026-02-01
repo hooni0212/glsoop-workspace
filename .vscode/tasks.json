@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Deploy: glsoop (server) - dbbak && dep",
+      "type": "shell",
+      "command": "ssh",
+      "args": [
+        "-t",
+        "glsoop@222.105.145.131",
+        "/bin/bash",
+        "-lc",
+        "dbbak && dep"
+      ],
+      "problemMatcher": [],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      }
+    },
+    {
+      "label": "Deploy: glsoop-mobile - mdep",
+      "type": "shell",
+      "command": "ssh",
+      "args": [
+        "-t",
+        "glsoop@222.105.145.131",
+        "/bin/bash",
+        "-lc",
+        "mdep"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      }
+    }
+  ]
+}
