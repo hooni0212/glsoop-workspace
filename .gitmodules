@@ -1,0 +1,6 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/hooni0212/glsoop.git
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/hooni0212/glsoop-mobile.git
